@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .ip{
+            background:blue; 
+            margin:10px;
+        }
+        #ik{
+            background: yellow;
+            margin-bottom: 40px;
+            /* 相邻元素的margin会合并，margin值为最大的那边的margin值。 */
+           border:1px solid;
+           /* 加上边框就可以显示出p的上下margin */
+           /* overflow: hidden;
+           生成bfc也可以解除边框合并 */
+           }
+        .ck{
+            margin-top: 30px;
+            background: pink;
+        }
+       .footer{
+        background:#225533;
+            margin: 40px;
+       }
+    /* 己合并margin。当元素设置了上下margin值，里面内容为空。上下margin会合并为一个
+    footer里面没有值，上下margin合并了 */
+       .footer2{
+        background: red;
+        margin-bottom: 40px;
+       }
+    
+       .footer3{
+        background: orange;
+        margin-bottom: 40px;
+       }
+    </style>
+    
+</head>
+<body>
+    <header id="ik">
+        <p class="ip">dddddd</p>
+    </header>
+    <div class="ck">
+        <p>lalalala</p>
+        <!-- 父子合并p和ck的上margin合并了 -->
+    </div>
+    <div class="footer">
+        
+    </div>
+    <div class="footer2">
+        footer2
+        </div>
+        <div class="footer3">
+                footer3
+        </div>
+
+</body>
+</html>

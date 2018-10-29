@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    h1{
+        background-color: aquamarine;
+       
+    }
+    body{
+        background-color: pink;  
+        overflow:hidden;
+    }
+    ul>lI{
+        float: left;
+    }
+    nav{
+        background:yellow;
+        overflow: hidden;
+        /* 设置overflow：hidden设置一个bfc，
+        bfc内浮动的高度也算做高度。一定要对父主体创造bfc */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>标签</h1>
+    </header>
+    <nav>
+        <ul>
+            <LI>1</LI>
+            <LI>2</LI>
+            <LI>3</LI>
+        </ul>
+    </nav>
+</body>
+</html>
